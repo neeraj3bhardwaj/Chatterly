@@ -2,6 +2,7 @@ import express from "express"
 import dotenv from "dotenv"
 import {connectDB} from "./DB/connectDB.js"
 import userRoutes from "./Routes/user.route.js"
+import promptRoutes from "./Routes/prompt.route.js"
 import cookieParser from "cookie-parser"
 
 dotenv.config()
@@ -27,4 +28,5 @@ connectDB()
   });
 
   // route
-  app.use("/api/v1/user", userRoutes)
+  app.use("/api/v1/user", userRoutes) 
+  app.use("/api/v1/prompt", promptRoutes)

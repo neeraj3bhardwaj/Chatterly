@@ -1,6 +1,6 @@
 import express from "express"
 import {sendPrompt}  from "../Controllers/prompt.controller.js"
-import userMiddleware from "../Middleware/pormpt.middleware.js"
+import userMiddleware from "../Middleware/prompt.middleware.js"
 
 const router = express.Router()
 
